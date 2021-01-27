@@ -1,0 +1,8 @@
+<script>
+ $('.navbar-inverse .navbar-nav > li > a').click(function () {
+
+if ($(window).width() < 767) {} else {
+    location.href = $(this).siblings('.dropdown-menu').children('li').eq(0).children('a').attr('href');
+}
+});
+</script>
